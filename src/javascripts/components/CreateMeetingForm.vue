@@ -110,7 +110,6 @@ export default {
                         meetingDetail.timezone,
                         attendeeArray
                 );
-                let meetingResponse = {calendarURLs:[{host: 'http://test.com', attendee: 'http://test.com'}]};
                 // success message and dialog
                 const timezoneDesc = this.getTimezoneDescFromId(meetingDetail.timezone);
                 let user = await zendeskClient.currentUser();
