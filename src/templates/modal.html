@@ -1,0 +1,13 @@
+<!-- modal message dlg taken from  https://developerblog.zendesk.com/making-modals-work-in-zaf-v2-251b7c940e58-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- http://garden.zendesk.com -->
+  <% _.forEach(htmlWebpackPlugin.options.vendorCss, function(css) { %><link href="<%= css %>" rel="stylesheet"><% }); %>
+</head>
+<body>
+  <script type="text/javascript" src="https://assets.zendesk.com/apps/sdk/2.0/zaf_sdk.js"></script>
+  <div id = "modal-app">
+  </div>
+</body>
+</html>
